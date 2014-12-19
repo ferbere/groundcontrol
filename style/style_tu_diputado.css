@@ -1,0 +1,38 @@
+#autor{
+	font-size:0.8em;
+	font-style:italic;
+	text-align:right;
+}
+#contenido{
+
+}
+#contenido img{
+	border-radius:10px;
+	box-shadow:1px 1px 5px 1px #000;
+		float:left;
+	margin-right:20px;
+	width:200px;
+}
+#contenido p{
+	text-indent:4em;
+}
+#content3 li{
+	border-bottom:1px dotted;
+	list-style:none;
+	padding:10px 0px 10px 0px;
+}
+#content3 img{
+	border-radius:8px;
+	box-shadow:1px 1px 3px 2px rgba(0,0,0,0.6);
+	max-width:70px;
+}
+#content3-1,#content3-2{
+	display:inline-block;
+	vertical-align:top;
+}
+#content3-1{
+	width:10%;
+}
+#content3-2{
+	width:80%;
+}

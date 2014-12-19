@@ -1,0 +1,11 @@
+@mysql{
+	
+}
+ftp{
+>>	banners/bann2_index.php
+>>	style/images/lx2.png;
+>>	style/images/logo_gpo_pan3.jpg;
+>>	style/images/unidos_hacemos.jpg;
+>>	style/style_index.css;
+>>	style/style.css
+}

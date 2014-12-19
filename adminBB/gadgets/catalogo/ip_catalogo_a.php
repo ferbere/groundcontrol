@@ -1,0 +1,47 @@
+<?php
+session_start();
+include_once('../../../classes/conex.php');
+$link=Conectarse();
+if(isset($_POST["rubro"])){
+	$rubro=$_POST["rubro"];
+}
+if(isset($_POST["nombre"])){
+	$nombre=$_POST["nombre"];
+}
+if(isset($_POST["subnombre"])){
+	$subnombre=$_POST["subnombre"];
+}
+if(isset($_POST["categoria"])){
+	$categoria=$_POST["categoria"];
+}
+if(isset($_POST["descripcion"])){
+	$descripcion=$_POST["descripcion"];
+}
+if(isset($_POST["imagen"])){
+	$imagen=$_POST["imagen"];
+}
+if(isset($_POST["ext"])){
+	$ext=$_POST["ext"];
+}
+if(isset($_POST["visible"])){
+	$visible=$_POST["visible"];
+}
+if(isset($_POST["precio_baja"])){
+	$precio_baja=$_POST["precio_baja"];
+}
+if(isset($_POST["precio_alta"])){
+	$precio_alta=$_POST["precio_alta"];
+}
+if(isset($_POST["precio_altisima"])){
+	$precio_altisima=$_POST["precio_altisima"];
+}
+if(isset($_POST["precio_alta2"])){
+	$precio_alta2=$_POST["precio_alta2"];
+}
+$que=mysql_query("UPDATE catalogo_index SET nombre = '$nombre', subnombre = '$subnombre', categoria = '$categoria', descripcion = '$descripcion', imagen = '$imagen', ext='$ext', visible='$visible', precio_baja='$precio_baja', precio_alta='$precio_alta', precio_altisima='$precio_altisima', precio_alta2='$precio_alta2' WHERE id = '$rubro'",$link);
+if(!$que){die ("Pos no se capturó el contenido, parece que: " .mysql_error());
+}else{
+	echo '<script>window.location.href="../../catalogo.php?ruta=if_catalogo_a.php&capturado=1";</script>';
+}
+include("style/footer_admin.html");
+?>

@@ -1,0 +1,11 @@
+#logo1_boletines,#logo2_boletines,#content3{
+	display:inline-block;
+	padding-top:2%;
+	vertical-align:top;
+}
+#logo1_boletines img{
+	width:100px;
+}
+#logo2_boletines img{
+	width:150px;
+}

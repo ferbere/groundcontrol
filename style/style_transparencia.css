@@ -1,0 +1,33 @@
+#nav_transparencia{
+	font-size:1em;
+	margin-top:5px;
+	width:100%;
+}
+#nav_transparencia ul {
+    list-style: none;
+	position:relative;
+}
+#nav_transparencia ul li {
+	background:rgba(0,71,142, 0.52);
+	border-radius:5px;
+	box-shadow:1px 1px 5px 1px rgba(0,0,0,1);
+	display:inline-block;
+	margin:1px 5px;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	width:40%;
+}    
+#nav_transparencia ul li a {  
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+}  
+#nav_transparencia ul li a:hover { 
+	opacity:0.7;
+}  
+
+#nav_transparencia ul li.selected a {  
+}
+#nav_transparencia ul li.active a {  
+}

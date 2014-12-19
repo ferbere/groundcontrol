@@ -1,0 +1,42 @@
+#botones_sociales{
+	text-align:center;
+}
+#comisiones_titulo p{
+	font-size:1.3em;
+}
+#comisiones{
+	width:100%;
+}
+#comisiones1,#comisiones2{
+	display:inline-block;
+	vertical-align:top;	
+}
+#comisiones1{
+	width:50%;
+}
+#comisiones2{
+	padding:0% 0% 0% 5%;
+	width:40%;
+}
+#conten{
+
+}
+#conten2{
+	padding:0% 0% 0% 5%;
+	width:50%;
+}
+#conten,#conten2{
+	display:inline-block;
+	vertical-align:top;
+}
+#distrito{
+	font-size:1.3em;
+	font-variant:small-caps;
+}
+#imagen img{
+	border-radius:12px;
+	box-shadow:1px 1px 5px 0px #000;
+}
+#titulo{
+	
+}

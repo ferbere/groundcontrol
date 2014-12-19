@@ -1,0 +1,42 @@
+#bann0{
+	padding-top:30px;
+}
+#main_ligas{
+	text-align:left;
+	
+}
+#ligas{
+}
+#bg_ligas{
+	padding-top:20px;
+}
+#bg_ligas1{
+	background:#fff;
+	height:70px;
+	padding:10px;
+	border:0px solid;
+	box-shadow: 2px 2px 5px #111;
+	-moz-box-shadow: 2px 2px 5px #111;
+	-webkit-box-shadow: 2px 2px 5px #111;
+	border-radius: 10px;  
+	-moz-border-radius: 10px;
+}
+#bg_ligas1 img{
+	width:120px;
+}
+
+#bg_ligas2{
+	font-size:120%;
+	padding-left:10px;
+}
+#bg_ligas3{
+	font-size:90%;
+	padding-left:10px;
+	vertical-align:top;
+}
+#bg_ligas4{
+	height:30px;
+}
+#nav{
+	background:rgba(0,71,142, 0.52);
+}
