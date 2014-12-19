@@ -16,6 +16,7 @@ while($row = $mysql->fetch_array($sql)){
 		<h1><?php echo $row[1];?></h1>
 		<div id="autor">Escrito por: <?php echo $row[4] ?></div>
 		<div id="contenido"><img src="images/articulos/<?php echo $row[2]; ?>"><?php echo $row[3];?></div>
+		<div class="fb-like" data-href="http://www.bunkerpolitico.com.mx/bunker/opinion.php?rubro='.$row[0].'" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
 <?php
 }
 ?>
