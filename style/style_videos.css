@@ -121,6 +121,7 @@
 #encuesta_ant_cont{
 	overflow: auto;
 	padding-left: 80px;
+	padding-right: 10px;
 	text-align: justify;
 	width: 80%;
 }

@@ -7,7 +7,7 @@ $sql = $mysql->consulta("SELECT id,nombre FROM video_index WHERE visible = 1 ORD
 <div id="bann00_videos_2">
 		<?php
 			echo 	'<h1>Más videos</h1>';
-			echo '<div id="">';
+			echo '<div id="bann00_propuestas_tx">';
 		while($row=$mysql->fetch_array($sql)){
 			echo '<div id="">';
 			echo 	'<li>';

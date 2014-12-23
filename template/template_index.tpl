@@ -7,7 +7,10 @@
 <link rel="stylesheet" type="text/css" href="style/{css}" />
 <link rel="stylesheet" type="text/css" href="style/font-awesome.css" />
 <script src="library/jquery-1.4.3.min.js" type="text/javascript"></script>
-<script src="library/jquery.innerfade/js/jquery.innerfade.js" type="text/javascript"></script>
+<script src="library/jquery-1.4.3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="library/jquery-lightbox-0/js/jquery.lightbox-0.5.js"></script>  
+<link rel="stylesheet" type="text/css" href="library/jquery-lightbox-0/css/jquery.lightbox-0.5.css" media="screen" />
+
 </head>
 <body>
 	<header>

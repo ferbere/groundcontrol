@@ -19,6 +19,7 @@ while($row = $mysql->fetch_array($sql)){
 		echo '<div id="encuesta_ant_cont">';
 		echo 	'<div id="encuesta_ant_tit">'.$row[2].'</div>';
 		echo 	'<div id="encuesta_ant_cont">'.$row[3].'</div>';
+		echo	'<div class="fb-like" data-href="http://www.bunkerpolitico.com.mx/bunker/opinion.php?rubro='.$row[0].'" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>';
 		echo '</div>';
 		echo '</div>';
 } ?>

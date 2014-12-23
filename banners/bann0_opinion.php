@@ -7,12 +7,12 @@ if(isset($_GET['rubro'])){
 }
 ?>
 <div id="opinion">
-	<div id="opinion_tit">Opinión</div>
 <?php
-$sql = $mysql->consulta("SELECT articulos_index.id,articulos_index.titulo,articulos_index.imagen,articulos_index.contenido,perfil_index.nombre FROM articulos_index INNER JOIN perfil_index ON articulos_index.autor = perfil_index.id WHERE articulos_index.id = '$rubro'");
+$sql = $mysql->consulta("SELECT articulos_index.id,articulos_index.titulo,articulos_index.imagen,articulos_index.contenido,perfil_index.nombre,articulos_categoria.nombre FROM articulos_index INNER JOIN perfil_index ON articulos_index.autor = perfil_index.id INNER JOIN articulos_categoria ON articulos_index.categoria = articulos_categoria.id WHERE articulos_index.id = '$rubro'");
 
 while($row = $mysql->fetch_array($sql)){
 ?>
+		<div id="opinion_tit"><?php echo $row[5];?></div>
 		<h1><?php echo $row[1];?></h1>
 		<div id="autor">Escrito por: <?php echo $row[4] ?></div>
 		<div id="contenido"><img src="images/articulos/<?php echo $row[2]; ?>"><?php echo $row[3];?></div>

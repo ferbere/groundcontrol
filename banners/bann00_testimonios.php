@@ -32,14 +32,16 @@ if(empty($testimonio)){
 	while($row=$mysql->fetch_array($sql)){
 		echo 	'<div id="bann00_testimonios'.$i.'">';
 		echo 		'<div id="bann00_testimonios1_1">';
+		echo 			'<a href="'.$_SERVER['PHP_SELF'].'?testimonio='.$row['id'].'">';
 		echo 				'<img src="images/testimonios/'.$row['imagen'].'">';
+		echo 			'</a>';
 		echo 		'</div>';
 		echo 		'<div id="bann00_testimonios2_2">';
 		echo 			'<h2>'.$row['titulo'].'</h2>';
 		if(!empty($testimonio)){
 		echo 			'<p>'.$row['contenido'].'</p>';
 		}else{
-		echo 			'<p>'.cut_string($row['contenido'],150);	
+		echo 			'<p>'.cut_string($row['contenido'],150);
 		echo 			'<a href="'.$_SERVER['PHP_SELF'].'?testimonio='.$row['id'].'">';
 		echo 			'Leer más';
 		echo 			'</a></p>';

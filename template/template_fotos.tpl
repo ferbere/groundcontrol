@@ -11,21 +11,15 @@
 <link rel="stylesheet" type="text/css" href="library/jquery-lightbox-0/css/jquery.lightbox-0.5.css" media="screen" />	
 </head>
 <body>
-
-<div id="bing">
-	<header>
-		<div id="header-1">
-			<div id="header1-1uno">{header}</div>
-			<div id="level1">{logo}</div><!--level1-->
+<header>
+		<div id="header">
+			{navbar}
 		</div>
-	</header>
-		<div id="bing1">
-			<div id="main">
-				<div id="bann1">{navbar}</div>
-				<div id="bann0">{main_object}</div>
-			</div>
-
-		</div><!--termina bing1-->	
-</div><!--termina bing-->
+</header>
+	<div id="bing">
+	<div id="nivel1">{maincontent}</div>
+	<div id="nivel2">{main_object}</div>
+	</div>
+	<footer>{footer}</footer>
 </body>
 </html>

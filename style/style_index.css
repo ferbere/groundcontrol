@@ -1,6 +1,74 @@
+#bing{
+
+	-moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: once;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.5s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: once;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-240px);
+    }
+    100% {
+        -moz-transform: translateY(-100);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-240px);
+    }
+    100% {
+        -webkit-transform: translateY(-100);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-240px);
+    }
+    100% {
+        transform: translateY(-100);
+    }
+}
 #bann00_imagen img{
 	height: 350px;
 	width: 510px;
+}
+#bann00_join{
+	color: rgba(255,255,255,1);
+	margin: 100px auto;
+	text-align: center;
+	width: 300px;
+}
+#bann00_join input{
+	border: 0px;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 5px auto;
+	text-align: center;
+	vertical-align: top;
+	width: 300px;
+}
+
+#bann00_join input[type=submit]{
+/*	background: rgba(250,250,250,1);*/
+	border: 0px;
+	border-radius: 5px;
+	margin: 10px auto;
+	width: 50px;
+}
+
+#bann00_join1{
+	font-size: 1.5em;
 }
 #bann00_opinion{
 	padding:10px 30px 0px 30px;
@@ -49,7 +117,17 @@
 }
 #bann00_propuestas li{
 	width: 100%;
-
+}
+#bann00_propuestas_tx a {
+	font-size: 1em;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+#bann00_propuestas_tx :hover{
+	font-size: 1.1em;
 }
 #bann00_testimonios{
 	color: rgba(255,255,255,1);
@@ -89,8 +167,17 @@
 #bann00_testimonios1_1{
 	width: 150px;
 }
-#bann00_testimonios1_1 img{
+
+#bann00_testimonios1_1 a img{
 	width: 150px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+#bann00_testimonios1_1 :hover img {
+	width: 170px;
 }
 #bann00_testimonios2_2{
 	padding-left: 10px;

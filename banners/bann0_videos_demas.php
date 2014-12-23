@@ -21,7 +21,8 @@ $sql = $mysql->consulta("SELECT id,liga,nombre,descripcion FROM video_index WHER
 					  	<?php echo $liga?>"
 					frameborder="0" allowfullscreen></iframe>
 	<?php 	
-						echo $row['descripcion'];
+						echo $descripcion;
 	?>
+		<div class="fb-like" data-href="http://www.bunkerpolitico.com.mx/bunker/opinion.php?rubro='.$row[0].'" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 </div>

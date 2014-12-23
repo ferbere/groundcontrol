@@ -7,7 +7,7 @@ if(isset($_GET['rubro'])){
 }
 ?>
 <div id="opinion_ant">
-	<div id="opinion_ant_sec">Opiniones anteriores</div>
+	<div id="opinion_ant_sec">Entradas anteriores</div>
 <?php
 $sql = $mysql->consulta("SELECT articulos_index.id,articulos_index.titulo,articulos_index.imagen,articulos_index.contenido,perfil_index.nombre FROM articulos_index INNER JOIN perfil_index ON articulos_index.autor = perfil_index.id WHERE articulos_index.publicado = 1 AND articulos_index.id != '$rubro' ORDER BY articulos_index.id DESC LIMIT 10");
 
